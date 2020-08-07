@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+	layout:decorate="~{fragments/layout-main}">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Đăng nhập</title>
+</head>
+
+<body>
+	<div layout:fragment="content" class="jumbotron">
+		<form action="#">
+			<h1 class="display-4">Đăng nhập</h1>
+			<div class="form-group">
+				<label for="inputEmail">Địa chỉ Email *</label> <input type="email" class="form-control" id="inputEmail"
+					aria-describedby="emailHelp" required="required"> <small id="emailHelp"
+					class="form-text text-muted">Chúng tôi không bao giờ chia
+					sẻ email của bạn cho bất kỳ ai khác.</small>
+			</div>
+			<div class="form-group">
+				<label for="inputPassword">Password *</label> <input type="password" class="form-control"
+					id="inputPassword" required="required">
+			</div>
+			<div class="form-group form-check">
+				<input type="checkbox" class="form-check-input" id="chkAccept" required="required"> <label
+					class="form-check-label" for="chkAccept">Tôi đồng ý các điều khoản sử dụng dịch vụ
+					của thư viện</label>
+			</div>
+
+			<button type="submit" class="btn btn-primary"><i class="fas fa-sign-in-alt"></i> Đăng nhập</button>
+			<a href="reset" class="text-primary" data-toggle="modal" data-target="#modelResetPass"><i class="far fa-lightbulb"></i> Quên mật khẩu</a>
+		</form>
+		<br>
+		<div class="alert alert-info" role="alert">
+			<h4 class="alert-heading"><i class="far fa-flag"></i> Lưu ý!</h4>
+			<p class="mb-0">Để đăng ký và phát hành thẻ, hãy liên hệ trực
+				tiếp tại thư viện</p>
+		</div>
+
+		<div class="modal fade" id="modelResetPass" tabindex="-1" aria-labelledby="labelResetPass" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="labelResetPass"><i class="far fa-comment-dots"></i> Thông tin</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">Email chứa mật khẩu mới đã được gửi
+						cho bạn</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

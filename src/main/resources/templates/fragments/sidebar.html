@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	
+</head>
+
+<body class="container-fluid ">
+	<div th:fragment="rightside" class="jumbotron">
+		<div class="d-none d-lg-block">
+			<img src="images/ad125x125.jpg" class="w-50" /><img src="images/ad125x125.jpg" class="w-50" /><img
+				src="images/ad125x125.jpg" class="w-50" /><img src="images/ad125x125.jpg" class="w-50" />
+		</div>
+		<div class="d-block d-lg-none">
+			<img src="images/ad125x125.jpg" class="w-25" /><img src="images/ad125x125.jpg" class="w-25" /><img
+				src="images/ad125x125.jpg" class="w-25" /><img src="images/ad125x125.jpg" class="w-25" />
+		</div>
+		<br>
+		<form class="form-inline" action="/search">
+			<label class="sr-only" for="inputBookName">Tên sách</label>
+			<input type="text" class="form-control mb-2 mr-sm-2" id="inputBookName" name="bookName" required="required">
+			<button type="submit" class="btn btn-secondary mb-2"><i class="fas fa-search"></i> Tìm theo tên sách</button>
+		</form>
+		<br>
+		<h2>Hoạt động mới</h2>
+		<ul>
+			<li>Pellentesque Aapien Orci Blandi Pellen Tesque Aapien Orci Blandit</li>
+			<li>Nam Et Nisi Ut Nunc</li>
+			<li>Quisque Egestas Posuere Tellus</li>
+			<li>Quisque Sit Amet Diam</li>
+			<li>Interdum Arcu Sit Amet Erat</li>
+			<li>Aenean Lectus Massa</li>
+		</ul>
+	</div>
+</body>
+
+</html>

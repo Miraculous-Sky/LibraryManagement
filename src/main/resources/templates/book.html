@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+	layout:decorate="~{fragments/layout-main}">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Tìm kiếm</title>
+</head>
+
+<body>
+	<div layout:fragment="content">
+		<div class="jumbotron">
+			<ul class="nav nav-tabs" id="myTab" role="tablist">
+				<li class="nav-item">
+					<a class="nav-link active" id="info-tab" data-toggle="tab" href="#info" role="tab"
+						aria-controls="info" aria-selected="true">Thông tin</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="description-tab" data-toggle="tab" href="#description" role="tab"
+						aria-controls="description" aria-selected="false">Mô tả</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="comment-tab" data-toggle="tab" href="#comment" role="tab"
+						aria-controls="comment" aria-selected="false">Bình luận</a>
+				</li>
+			</ul>
+			<div class="tab-content" id="myTabContent">
+				<div class="tab-pane fade show active" id="info" role="tabpanel" aria-labelledby="info-tab">
+					Công ty phát hành NXB Trẻ
+					Ngày xuất bản 11-2010
+					Kích thước 13 x 20
+					Phiên bản 1st
+					Loại bìa Bìa mềm
+					Số trang 380
+					SKU 2517690808536
+					Nhà xuất bản NXB Trẻ
+				</div>
+				<div class="tab-pane fade" id="description" role="tabpanel" aria-labelledby="description-tab">
+					“Tôi thấy hoa vàng trên cỏ xanh” truyện dài mới nhất của nhà văn vừa nhận giải văn chương ASEAN
+					Nguyễn Nhật Ánh - đã được Nhà xuất bản Trẻ mua tác quyền và giới thiệu đến độc giả cả nước.
+
+					Cuốn sách viết về tuổi thơ nghèo khó ở một làng quê, bên cạnh đề tài tình yêu quen thuộc, lần đầu
+					tiên Nguyễn Nhật Ánh đưa vào tác phẩm của mình những nhân vật phản diện và đặt ra vấn đề đạo đức như
+					sự vô tâm, cái ác. 81 chương ngắn là 81 câu chuyện nhỏ của những đứa trẻ xảy ra ở một ngôi làng:
+					chuyện về con cóc Cậu trời, chuyện ma, chuyện công chúa và hoàng tử, bên cạnh chuyện đói ăn, cháy
+					nhà, lụt lội,... “Tôi thấy hoa vàng trên cỏ xanh” hứa hẹn đem đến những điều thú vị với cả bạn đọc
+					nhỏ tuổi và người lớn bằng giọng văn trong sáng, hồn nhiên, giản dị của trẻ con cùng nhiều tình tiết
+					thú vị, bất ngờ và cảm động trong suốt hơn 300 trang sách. Cuốn sách, vì thế có sức ám ảnh, thu hút,
+					hấp dẫn không thể bỏ qua.</div>
+				<div class="tab-pane fade" id="comment" role="tabpanel" aria-labelledby="comment-tab">
+					Nguyễn Thị Lan Đài 17/06/2017
+					Sách của thầy ánh là khỏi vàn rồi
+					sách vẫn đúng kiểu NN. Ánh, luốn dành phần lớn thời gian đầu để giới thiệu nhân vật sao đó mới đi
+					vào cốt truyện, khá ngạc nhiên khi tình yêu lần này chì toàn là lớp 7 trở xuống, nhưng sách vẫn rất
+					hay và dễ nhớ, còn về phần tiki thì khỏi nói hé, tốn chổ nữa ai cũng biết rồi mà.
+					Văn Thuỷ 02/11/2016
+					Cực kỳ hài lòng
+					Cuốn sách rất hay dành cho mọi lứa tuổi có thể đọc được. Tôi sinh ra và lớn lên ở nông thôn, tuổi
+					thơ gắn liền với cánh đồng lúa, bờ mương và những đàn trâu bò. Buổi chiều lũ trẻ chúng tôi thường
+					đánh khăng đánh đáo, tắm ao. Tác phẩm đem lại cho ký ức tuổi thơ tôi rất nhiều kỷ niệm.
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
