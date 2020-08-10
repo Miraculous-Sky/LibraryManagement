@@ -10,7 +10,7 @@
 		<nav class="navbar navbar-expand-lg navbar-light"
 			style="background-color: #2ccf6d">
 			<a class="navbar-brand" style="user-select: none;"> <img
-				src="images/logo.png" width="30" height="30"
+				th:src="@{~/images/logo.png}" width="30" height="30"
 				class="d-inline-block align-top" alt="" draggable="false" /> Thư
 				viện
 			</a>
@@ -94,16 +94,13 @@
 					<li class="nav-item active"><a class="nav-link" href="/"><i
 							class="fas fa-home"></i> Trang chủ</a></li>
 					<li class="nav-item"><a class="nav-link" href="/search"><i
-							class="fas fa-search"></i> Tra cứu sách</a></li>
+							class="fas fa-users-cog"></i> Quản lý nhân sự</a></li>
 					<li class="nav-item"><a class="nav-link" href="/about"><i
-							class="fas fa-id-badge"></i> Giới thiệu</a></li>
+							class="fas fa-exchange-alt"></i> Quản lý mượn trả</a></li>
 					<li class="nav-item"><a class="nav-link" href="/contact"><i
-							class="fas fa-laptop-house"></i> Liên hệ</a></li>
+							class="fas fa-book"></i> Quản lý sách</a></li>
 				</ul>
-				<div class="form-inline my-2 my-lg-0">
-					<a href="/login" class="nav-link text-dark"><i
-						class="fas fa-sign-in-alt"></i> Đăng nhập</a>
-				</div>
+
 			</div>
 		</nav>
 	</div>
